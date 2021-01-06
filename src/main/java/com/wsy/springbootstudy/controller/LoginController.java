@@ -22,7 +22,7 @@ public class LoginController {
         if(!StringUtils.isEmpty(username)&&"123456".equals(password)){
             //登陆成功,防止表单重复提交，用重定向的方式到主页
             //return "dashboard";
-            session.setAttribute("loginuser",username);
+            session.setAttribute("loginUser",username);
             return "redirect:/main.html";
         }else{
             //登陆失败提示返回消息
